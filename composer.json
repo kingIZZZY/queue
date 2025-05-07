@@ -21,19 +21,19 @@
     ],
     "require": {
         "php": "^8.2",
-        "hyperf/coroutine": "~3.1.0",
+        "hyperf/coroutine": "3.2.x-dev",
         "hyperf/engine": "^2.1",
-        "hyperf/coordinator": "~3.1.0",
-        "hyperf/contract": "~3.1.0",
-        "hyperf/support": "~3.1.0",
-        "hyperf/collection": "~3.1.0",
-        "hyperf/tappable": "~3.1.0",
-        "hyperf/db-connection": "~3.1.0",
+        "hyperf/coordinator": "3.2.x-dev",
+        "hyperf/contract": "3.2.x-dev",
+        "hyperf/support": "3.2.x-dev",
+        "hyperf/collection": "3.2.x-dev",
+        "hyperf/tappable": "3.2.x-dev",
+        "hyperf/db-connection": "3.2.x-dev",
         "laravel/serializable-closure": "^1.2.2",
         "ramsey/uuid": "^4.7",
         "symfony/process": "^7.0",
-        "hypervel/support": "^0.1",
-        "hypervel/encryption": "^0.1"
+        "hypervel/support": "dev-edge-hyperf3.2",
+        "hypervel/encryption": "dev-edge-hyperf3.2"
     },
     "autoload": {
         "psr-4": {
@@ -60,5 +60,15 @@
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "github",
+            "url": "https://github.com/kingIZZZY/support"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/kingIZZZY/encryption"
+        }
+    ]
 }
